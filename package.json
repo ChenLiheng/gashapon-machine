@@ -1,0 +1,13 @@
+{
+  "name": "gashapon-machine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "ChenLiheng",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "parcel": "^2.0.0-rc.0"
+  }
+}
