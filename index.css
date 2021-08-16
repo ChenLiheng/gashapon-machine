@@ -1,0 +1,132 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 375px;
+  height: 607px;
+  position: relative;
+}
+
+#gashapon {
+  width: 375px;
+  height: 607px;
+}
+
+.result {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+#result-pop-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result .bg-light {
+  width: 358px;
+  height: 360px;
+  position: absolute;
+  margin: auto;
+  animation: rotate 5s infinite linear;
+}
+
+
+.result .ball-up {
+  width: 119px;
+  height: 60px;
+  position: absolute;
+  top: 243px;
+}
+
+.result .ball-down {
+  width: 128px;
+  height: 66px;
+  position: absolute;
+  top: 303px;
+}
+
+.ball-up-animate {
+  display: block;
+  animation: shake 1s infinite linear;
+  transform-origin: 50% 100%;
+  animation-iteration-count: 1;
+}
+
+.ball-down-animate {
+  display: block;
+  animation: shake 1s infinite linear;
+  transform-origin: 50% 0%;
+  animation-iteration-count: 1;
+}
+
+.result .reward {
+  position: absolute;
+  display: none;
+}
+
+.result .receive-btn {
+  width: 169px;
+  height: 45px;
+  position: absolute;
+  top: 410px;
+  display: none;
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes shake {
+  16.6% {
+    transform: rotate(0deg);
+  }
+
+  33.2% {
+    transform: rotate(-20deg);
+  }
+
+  49.8% {
+    transform: rotate(20deg);
+  }
+
+  66.4% {
+    transform: rotate(-20deg);
+  }
+
+  83% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
